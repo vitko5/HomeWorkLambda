@@ -15,11 +15,7 @@ public class Main implements FuncInterface {
         int c = randomInt(100,1000);
 
         // 1
-        FuncInterface funcInterfaceMethodMax = (A,B,C) -> {
-            if (A > B && A > C) {
-                return A;
-            } else return Math.max(B, C);
-        };
+        FuncInterface funcInterfaceMethodMax = (A,B,C) -> Math.max(A, Math.max(B,C));
         System.out.printf("Max from A:%s, B:%s, C:%s is %s\n",a,b,c,funcInterfaceMethodMax.funcInterfaceMethod(a,b,c));
 
         // 2
@@ -35,6 +31,8 @@ public class Main implements FuncInterface {
     public int funcInterfaceMethod(int A, int B, int C) {
         return 0;
     }
+
+
 
     public static int randomInt(int fromInt, int toInt) {
         return (int) ((Math.random() * (toInt - fromInt)) + fromInt);
