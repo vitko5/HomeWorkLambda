@@ -6,7 +6,7 @@
 // 3. Третя - суму всіх трьох значень
 // Викликати ці лямбди.
 
-public class Main implements FuncInterface {
+public class Main {
 
     public static void main(String[] args) {
         // Main values to test
@@ -26,12 +26,6 @@ public class Main implements FuncInterface {
         FuncInterface funcInterfaceMethodSum = (A,B,C) -> A+B+C;
         System.out.printf("Sum from A:%s, B:%s, C:%s is %s\n",a,b,c,funcInterfaceMethodSum.funcInterfaceMethod(a,b,c));
     }
-
-    @Override
-    public int funcInterfaceMethod(int A, int B, int C) {
-        return 0;
-    }
-
 
 
     public static int randomInt(int fromInt, int toInt) {
