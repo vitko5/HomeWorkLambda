@@ -23,15 +23,11 @@ public class Main implements FuncInterface {
         System.out.printf("Max from A:%s, B:%s, C:%s is %s\n",a,b,c,funcInterfaceMethodMax.funcInterfaceMethod(a,b,c));
 
         // 2
-        FuncInterface funcInterfaceMethodAvg = (A,B,C) -> {
-            return (A+B+C)/3;
-        };
+        FuncInterface funcInterfaceMethodAvg = (A,B,C) -> (A+B+C)/3;
         System.out.printf("Average from A:%s, B:%s, C:%s is %s\n",a,b,c,funcInterfaceMethodAvg.funcInterfaceMethod(a,b,c));
 
         // 3
-        FuncInterface funcInterfaceMethodSum = (A,B,C) -> {
-            return A+B+C;
-        };
+        FuncInterface funcInterfaceMethodSum = (A,B,C) -> A+B+C;
         System.out.printf("Sum from A:%s, B:%s, C:%s is %s\n",a,b,c,funcInterfaceMethodSum.funcInterfaceMethod(a,b,c));
     }
 
